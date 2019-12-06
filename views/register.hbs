@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+<form action="/registration" method="post">
+    <div>
+        <input type="text" name="name" placeholder="Name">
+    </div>
+    <div>
+        <input type="text" name="email" placeholder="Email">
+    </div>
+    <div>
+        <input type="text" name="password" placeholder="Pass">
+    </div>
+    <div>
+        <input type="submit" value="Register">
+    </div>
+    {{#if textErr}}
+        <div>{{textErr}}</div>
+    {{/if}}
+</form>
